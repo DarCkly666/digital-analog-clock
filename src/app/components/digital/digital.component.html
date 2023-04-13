@@ -1,0 +1,16 @@
+<div class="digital">
+  <div class="digital__time__container">
+    <p class="digital__time">{{ time.getHours() }}</p>
+    <span>:</span>
+    <p class="digital__time">{{ time.getMinutes() }}</p>
+    <span>:</span>
+    <p class="digital__time">{{ time.getSeconds() }}</p>
+  </div>
+  <div class="digital__date__container">
+    <p class="digital__date">{{ time.getFullYear() }}</p>
+    <span>/</span>
+    <p class="digital__date">{{ time.getMonth() + 1 }}</p>
+    <span>/</span>
+    <p class="digital__date">{{ time.getDate() }}</p>
+  </div>
+</div>

@@ -1,0 +1,35 @@
+.digital {
+  width: 350px;
+  height: 200px;
+  box-shadow: 0px 0px 10px 0px var(--color-pink);
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.digital__time__container,
+.digital__date__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-family: "Orbitron", sans-serif;
+}
+
+.digital__time__container {
+  font-size: 4rem;
+  font-weight: 600;
+  text-shadow: 0 0 1px #fff, 0 0 3px var(--color-pink),
+    0 0 6px var(--color-pink), 0 0 9px var(--color-pink),
+    0 0 12px var(--color-pink);
+}
+
+.digital__date__container {
+  text-shadow: 0 0 1px #fff, 0 0 3px var(--color-green),
+    0 0 6px var(--color-green), 0 0 9px var(--color-green),
+    0 0 12px var(--color-green);
+  font-size: 2rem;
+}

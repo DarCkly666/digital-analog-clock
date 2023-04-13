@@ -1,0 +1,179 @@
+.analog__container {
+  width: 200px;
+  height: 200px;
+  box-shadow: 0 0 1px #fff, 0 0 3px var(--color-pink), 0 0 6px var(--color-pink),
+    0 0 9px var(--color-pink), 0 0 12px var(--color-pink);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  color: white;
+  border-radius: 50%;
+  overflow: hidden;
+  padding: 0.4rem;
+}
+
+.analog__clock {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.analog__clock__numbers,
+.analog__clock__lines {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-shadow: 0 0 1px #fff, 0 0 3px var(--color-pink),
+    0 0 6px var(--color-pink), 0 0 9px var(--color-pink),
+    0 0 12px var(--color-pink);
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}
+
+.analog__clock__numbers {
+  z-index: 40;
+}
+
+.analog__clock__numbers :nth-child(1) {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.analog__clock__numbers :nth-child(2) {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+.analog__clock__numbers :nth-child(3) {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.analog__clock__numbers :nth-child(4) {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.analog__clock__lines {
+  width: 200%;
+  height: 200%;
+  z-index: 20;
+  transform: translateX(-25%) translateY(-25%);
+}
+
+.clock__line {
+  width: 100%;
+  height: 3px;
+  background-color: white;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  position: absolute;
+  box-shadow: 0 0 1px #fff, 0 0 3px var(--color-pink), 0 0 6px var(--color-pink);
+}
+
+.analog__clock__lines :nth-child(1) {
+  transform: rotate(-30deg);
+}
+
+.analog__clock__lines :nth-child(2) {
+  transform: rotate(-60deg);
+}
+
+.analog__clock__lines :nth-child(3) {
+  transform: rotate(30deg);
+}
+
+.analog__clock__lines :nth-child(4) {
+  transform: rotate(60deg);
+}
+
+.analog__center {
+  position: absolute;
+  z-index: 30;
+  background-color: black;
+  width: 95%;
+  height: 95%;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.analog__clock__time {
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  z-index: 50;
+}
+
+.analog__clock__time--hour,
+.analog__clock__time--minute,
+.analog__clock__time--second {
+  border-radius: 4px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform-origin: left center;
+  background-color: white;
+  box-shadow: 0 0 1px #fff, 0 0 3px var(--color-pink), 0 0 6px var(--color-pink),
+    0 0 9px var(--color-pink), 0 0 12px var(--color-pink);
+}
+.analog__clock__time--hour {
+  width: 35%;
+  height: 6px;
+  transform: translateY(-3px);
+  box-shadow: 0 0 1px #fff, 0 0 3px var(--color-green),
+    0 0 6px var(--color-green), 0 0 9px var(--color-green),
+    0 0 12px var(--color-green);
+}
+
+.analog__clock__time--minute {
+  width: 50%;
+  height: 4px;
+  transform: translateY(-2px);
+}
+
+.analog__clock__time--second {
+  width: 50%;
+  height: 2px;
+  transform: translateY(-1px);
+}
+
+.analog__clock__date {
+  color: white;
+  width: 100%;
+  position: absolute;
+  top: 65%;
+  left: 0;
+  text-align: center;
+  z-index: 45;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  text-shadow: 0 0 1px #fff, 0 0 3px var(--color-green),
+    0 0 6px var(--color-green), 0 0 9px var(--color-green),
+    0 0 12px var(--color-green);
+}
